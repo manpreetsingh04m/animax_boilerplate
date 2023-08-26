@@ -18,6 +18,7 @@ header {
     max-width: 100%;
     max-height: 100%;
     border: 8px solid #1B1717;
+    text-align: center;
 }
 
 #logo img {
@@ -26,6 +27,7 @@ header {
 
 #header-text>p {
     width: 300px;
+    margin-left: 100px;
 }
 
 nav {
@@ -34,7 +36,19 @@ nav {
 
 #scroll {
     width: 80px;
+    position: relative;
+    animation: mymove 3s infinite;
+    animation-play-state: running;
 }
+@keyframes mymove{
+0%{
+    top: 15px;
+}
+100%{
+    top: 100px;
+}
+}
+
 
 .movie-text {
     max-width: 400px;
@@ -54,6 +68,10 @@ nav {
 .button {
     background-color: #F50A5F;
     padding: 7px;
+    width: 200px;
+
+   
+    
 }
 
 a {
@@ -99,6 +117,7 @@ hr {
 footer {
     height: 90px;
     text-align: center;
+    margin-top: 50px;
 }
 
 /* Iteration 1: Styling all the flex elements with (Justify-content:space-between) & (align-items:center) */
@@ -110,5 +129,38 @@ footer {
 /* Iteration 4: Animation */
 
 /* Iteration 5: Making webpage mobile responsive */
+.flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.movies{
+    flex-wrap: wrap;
+    min-height: 300px;
+    margin: 3% 10%;
+}
+@media screen and (max-width:1440px){
+    .container{
+        width: 100%;
+    }
+}
+@media screen and (max-width:1000px){
+    .container{
+        width: 100%;
+        align-items: center;
 
+    }
+}
+@media screen and (min-width:400px){
+    .container{
+        width: 100%;
+        align-items: center;
+        
+    }
+    header{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+}
 
