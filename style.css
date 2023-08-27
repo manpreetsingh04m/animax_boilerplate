@@ -136,7 +136,7 @@ footer {
 }
 .movies{
     flex-wrap: wrap;
-    min-height: 300px;
+    height: 300px;
     margin: 3% 10%;
 }
 @media screen and (max-width:1440px){
